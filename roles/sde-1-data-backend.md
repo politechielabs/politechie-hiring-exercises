@@ -168,8 +168,8 @@ Include a `README.md` that provides:
   * `./tests/` – unit/API tests
 * Include a `.gitignore`.
 * Keep updating the README with any clarifications.
-* Communication: email `hiring@politechie.dev` subject **"Python BE Exercise evaluation: [your full name]"** and share progress updates.
-* Questions: email `jobs@mlexperts.ai` subject **"Query on Python BE Exercise"**.
+* Communication: email `hiring@politechie.dev` subject **"Python Data and Backend Engineer Exercise evaluation: [your full name]"** and share progress updates.
+* Questions: email `hiring@politechie.dev` subject **"Query on Python Data and Backend Engineer Exercise"**.
 * Focus on getting a working vertical slice first.
 
 ---
