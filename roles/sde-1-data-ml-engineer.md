@@ -59,7 +59,7 @@ You do not have to implement this change -- we will discuss this on a call.
 
 ## Instructions to submit your work
 - Do not fork this repo. Work on a local copy. Add `shashank-srikant` as a collaborator to the repo. Keep the repo private.
-- Once you have created the repo, please write an email to shashank@mlexperts.ai and cc jobs@ramailo.tech, share a link to the repo, and mention that you've gotten started with the task. Please make sure to cc the Ramailo email ID. Ensure that you reply-to-all when responding to emails on the thread.
+- Once you have created the repo, please write an email to hiring@politechie.dev, share a link to the repo, and mention that you've gotten started with the task. Please make sure to cc the Ramailo email ID. Ensure that you reply-to-all when responding to emails on the thread.
 - Make it a habit to push changes upstream to your repo as frequently as feasible.
 - Use `Python3.8+` for this work.
 - We greatly value reproducability of results. Use `conda` to create an environment and set up your repository. 
