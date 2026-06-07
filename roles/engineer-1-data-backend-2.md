@@ -5,24 +5,23 @@ The goal is to see how well you can read a spec, integrate two external services
 
 **Time budget: ~2 days.** If you find yourself in scope creep, stop and write down what you cut.
 
-## Expected deliverables and evaluation criteria
+## Expected Deliverables and Evaluation Criteria
 
 - **Working prototype** that mirrors Discord activity into a JIRA Cloud instance.
-- **Code quality**: clear module boundaries, readable Python.
-- **Tests**: meaningful unit tests for the JIRA client and the sync logic.
-- **Communication**: frequent progress updates (commits + short notes) over a last-day dump.
+- **Code quality**: clear module boundaries and readable, maintainable Python.
+- **Tests**: meaningful unit tests covering the JIRA client and sync logic.
+- **Communication**: frequent progress updates (commits and short notes), rather than a last-minute code dump.
 
-**Please note:**  
-Many details have been omitted by design in the problem specification.  
+**Many details have been intentionally omitted from the specification.**
 
-You are expected to:  
-1. break the problem into manageable chunks, 
-2. identify the tech stack needed for each chunk, 
-3. articulate the overall implementation design 
-4. proactively seek our input on each of the steps above, and ensure the scope you are thinking of and what we expect matches, 
-5. only then should you implement a solution.
+A key part of this exercise is demonstrating how you approach an ambiguous problem. Before implementing a solution, you should:
 
-Planning the solution is as important as its implementation.
+1. Break the problem into manageable components.
+2. Identify the technologies and services needed for each component.
+3. Propose an overall system design.
+4. Validate your assumptions and proposed scope with us before proceeding.
+
+Planning, communication, and scope alignment are as important as the implementation itself.
 
 ---
 
