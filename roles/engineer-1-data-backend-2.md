@@ -56,7 +56,6 @@ Build a thin Python wrapper around the JIRA Cloud REST API for the operations th
 
 Build the Discord side using `discord.py` or `py-cord`. The bot should listen for new threads under `proj-*` channels and new messages inside those threads, and call the sync logic for each event.
 
-You do **not** need to backfill history from before the bot was added — only handle live events.
 
 ## Task 3 — Run locally
 
