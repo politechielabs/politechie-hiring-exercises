@@ -77,7 +77,7 @@ A reviewer should be able to:
 
 ## Repository requirements
 
-- Do not fork. Work on a private repo and add collaborators: `<collaborator-1>`, `<collaborator-2>`.
+- Do not fork. Work on a private repo and add collaborators: `dipesh517`, `shashank-srikant`.
 - Use **Python**. SQLite is fine for local state.
 - Keep `README.md` updated with reproducible instructions.
 - Commits should reflect incremental progress — we read the history.
