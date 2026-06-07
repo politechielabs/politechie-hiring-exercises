@@ -12,6 +12,17 @@ The goal is to see how well you can read a spec, integrate two external services
 - **Tests**: meaningful unit tests for the JIRA client and the sync logic.
 - **Communication**: frequent progress updates (commits + short notes) over a last-day dump.
 
+**Please note:**  
+Many details have been omitted by design.  
+You are expected to:  
+1. break the problem into manageable chunks, 
+2. identify the tech stack needed for each chunk, 
+3. Articulate the overall implementation design 
+4. Proactively seek our input on each of the steps above, and ensure the scope you are thinking of and what we expect matches, 
+5. Only then should you implement a solution.
+
+Planning the solution is as important as its implementation.
+
 ---
 
 ## Problem statement
