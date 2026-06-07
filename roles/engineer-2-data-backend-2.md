@@ -42,13 +42,12 @@ JIRA project creation is out of scope — if the project doesn't exist, the bot 
 3. **Transition.** Message in a milestone thread containing `status: <todo|in_progress|done|blocked>` → transition the linked issue. The comment is still recorded.
 4. **Resync command.** `!resync` in any project channel → ensure every thread has a corresponding JIRA issue; create missing, never delete; reply in-channel with a summary.
 
-No assignees, no due dates, no daily-update parsing, no LLM.
 
 ### Constraints
 
-- **Real JIRA Cloud.** Set up your own free Atlassian sandbox. No stubs.
+- **JIRA Cloud.** Set up your own free Atlassian sandbox.
 - **Idempotency is mandatory.** Re-running the bot over the same Discord history, or restarting after a crash, must not produce duplicate JIRA mutations.
-- **Test-driven.** Use `pytest`. Discord and JIRA boundaries must be mockable — CI cannot hit real APIs.
+- **Test-driven.** Use `pytest`.
 
 ---
 
@@ -58,7 +57,7 @@ Build a thin Python wrapper around the JIRA Cloud REST API for the operations th
 
 ## Task 2 — Discord ingestion
 
-Build the Discord side using `discord.py` or `py-cord`. The bot should backfill channel and thread history on startup, listen to live events, and reliably hand them to the sync engine — including surviving a crash with unprocessed events queued up.
+The bot should backfill channel and thread history on startup, listen to live events, and reliably hand them to the sync engine — including surviving a crash with unprocessed events queued up.
 
 ## Task 3 — Deployment
 
