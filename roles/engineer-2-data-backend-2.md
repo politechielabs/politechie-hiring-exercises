@@ -9,11 +9,13 @@ The goal is to evaluate how well you understand a fuzzy product requirement, sco
 
 - **Working prototype** that mirrors Discord project activity into a real JIRA Cloud instance end-to-end.
 - **System design quality**: clean module boundaries, idempotent sync, sensible failure handling.
+- **Scalability & Production Readiness:** Your solution will be evaluated on its system and architecture design. The goal is to build not just a simple prototype but a well designed, scalable system. Please ensure the system can scale from thousands to millions of users with minimal architectural changes.
 - **Deployment**: the bot actually runs on the public internet, not just on your laptop.
 - **Communication cadence**: frequent progress updates (PRs/commits + short notes) over a last-day dump.
 - **Attention to details**: edge cases, retries, testability.
 - **Design decisions documented**: a `design-decisions.md` capturing the key choices you made, *why*, and the tradeoffs you knowingly accepted (what you optimized for, what you gave up).
 - **Forward thinking**: the README articulates how the system would evolve — known limitations, future advancements, and what it would take to run this in production.
+- **Clarifications**: While attempting the task, asking clarifications, questions are highly encouraged.
 
 ---
 
@@ -114,6 +116,7 @@ A short, specific list of *real* gaps beats a long generic checklist.
 - Use **Python**. Postgres for databases.
 - Keep `README.md` updated with reproducible instructions.
 - Include a `design-decisions.md` at the repo root. Keep it updated as you go — we'd rather see decisions recorded in the moment than reconstructed at the end.
+- Keep track of all prompts (claude/copilot) in a version-controlled file so that the evolution of the prompts is tracked over time.
 - Commits should reflect incremental progress — we read the history.
 
 ---
