@@ -92,7 +92,7 @@ Code shows what you built; we also want to see how you think and design.
 
 ### In `design-decisions.md`
 - **Design choices + tradeoffs.** For each significant decision, state the choice, the alternatives you considered, and the tradeoff you accepted. We are explicitly looking for *conscious* tradeoffs, not justifications after the fact.
-- Call out the components you designed for production level set up but didn't build due to *time constraint* if any.
+- Call out the components you designed for a production-level setup but didn't build due to *time constraints*, if any, and any parts of the design you know don't scale.
 
 ### In `README.md`
 - **Further advancements.** If you had another week/month, what would you build or harden next, and why those first? Think beyond features — correctness, scale, observability, developer experience.
