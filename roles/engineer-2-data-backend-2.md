@@ -9,11 +9,13 @@ The goal is to evaluate how well you understand a fuzzy product requirement, sco
 
 - **Working prototype** that mirrors Discord project activity into a real JIRA Cloud instance end-to-end.
 - **System design quality**: clean module boundaries, idempotent sync, sensible failure handling.
+- **Scalability & production readiness**: aim for a deliberate system design, one that scales with increasing user load, events/day, and project channels in Discord.
 - **Deployment**: the bot actually runs on the public internet, not just on your laptop.
 - **Communication cadence**: frequent progress updates (PRs/commits + short notes) over a last-day dump.
 - **Attention to details**: edge cases, retries, testability.
 - **Design decisions documented**: a `design-decisions.md` capturing the key choices you made, *why*, and the tradeoffs you knowingly accepted (what you optimized for, what you gave up).
 - **Forward thinking**: the README articulates how the system would evolve — known limitations, future advancements, and what it would take to run this in production.
+- **Clarifications**: reach out if you have any doubts about the deliverables or implementation. Don’t just assume or sit on it.
 
 ---
 
@@ -86,11 +88,11 @@ A reviewer should be able to:
 ---
 ## Engineering reasoning (write this down — we grade it)
 
-Code shows what you built; we also want to see how you think.
+Code shows what you built; we also want to see how you think and design.
 
 ### In `design-decisions.md`
 - **Design choices + tradeoffs.** For each significant decision, state the choice, the alternatives you considered, and the tradeoff you accepted. We are explicitly looking for *conscious* tradeoffs, not justifications after the fact.
-- Be honest about what you'd do differently with more time.
+- Call out the components you designed for a production-level setup but didn't build due to *time constraints*, if any, and any parts of the design you know don't scale.
 
 ### In `README.md`
 - **Further advancements.** If you had another week/month, what would you build or harden next, and why those first? Think beyond features — correctness, scale, observability, developer experience.
@@ -101,7 +103,7 @@ Code shows what you built; we also want to see how you think.
 This is a prototype. We care a lot about whether you can see the gap between "works on a demo" and "runs in production." In the README, include a **"From prototype to production"** section that honestly answers:
 
 - What in this codebase would you *not* trust in production as-is, and why?
-- What breaks first under real load or real failure, and how would you address it?
+- What breaks first under real load (increasing user/events ) or real failure, and how would you address it?
 - Concretely walk through: secrets management, rate limits, reliability and recovery (restarts, partial failures), monitoring and alerting (what would you page on?), data migrations, security, and cost.
 
 A short, specific list of *real* gaps beats a long generic checklist.
@@ -114,6 +116,7 @@ A short, specific list of *real* gaps beats a long generic checklist.
 - Use **Python**. Postgres for databases.
 - Keep `README.md` updated with reproducible instructions.
 - Include a `design-decisions.md` at the repo root. Keep it updated as you go — we'd rather see decisions recorded in the moment than reconstructed at the end.
+- Keep track of all prompts (claude/copilot) in a version-controlled file `prompts.md` so that the evolution of the prompts is tracked over time.
 - Commits should reflect incremental progress — we read the history.
 
 ---
